@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <title>Hotel | Form</title>
+  </head>
+  <body>
+    <div
+      class = "container-fluid"
+      style = 
+      "display: flex;
+       justify-content: space-evenly;
+       flex-wrap: wrap-reverse;
+       align-items: center;"
+    >
+
+    <!--- Explaining what this is --->
+    <div class = "info-container">
+      <h1>Guitar Lessons!</h1><br>
+      <br>
+      <p>Ever wanted to shred on a guitar? Do you look at guitarist like Jimi
+        Hendrix and think, "Damn I wish I was that cool"? Well no worries!
+        for the low low price of $20 per lesson I will teach you how to shred!
+      </p>
+    </div>
+
+<!--- Signup form --->
+    <div class = "container-form">
+      <h1>Sign up!</h1>
+      <form>
+
+        <!--- Basic info gathering --->
+        <label for="fname"><b>First name:</b></label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <p></p>
+
+        <label for="lname"><b>Last name:</b></label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <p></p>
+
+        <label for="email"><b>Email Address:</b></label><br>
+        <input type="text" id="email" name="email"><br>
+        <p></p>
+
+        <label for ="ccard"><b>Credit Card:</b></label><br>
+        <input type="text" id="ccard" name="ccard"><br>
+        <p></p>
+
+        <!--- Fun checkbox stuffs --->
+        <label for = "mu-type"><b>What type of music would you like to play?</b></label><br>
+        <input type="checkbox" id="music1" name="music1" value="rock">
+        <label for="music1"> Rock n' Roll</label><br>
+        <input type="checkbox" id="music2" name="music2" value="jazz">
+        <label for="music2"> Jazz</label><br>
+        <input type="checkbox" id="music3" name="music3" value="classic">
+        <label for="vehicle3"> Classical</label><br>
+        <br>
+
+        <!--- Dropdown for if you have a guitar --->
+        <label for="guitar"><b>Do you have your own guitar?:</b></label>
+        <select name="guitar" id="guitar">
+          <option value="blank"> </option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select><br>
+        <p></p>
+
+        <!--- Cool calendar selector. Now if only i could make the js 
+          work ;-; --->
+        <label for="date"><b>Select a date for a lesson:</b></label>
+        <form action="/action_page.php"><br>
+          <input type="date" id="birthday" name="birthday">
+        </form><br>
+        <br>
+
+        <!--- dropdown for lesson time --->
+        <label for="time"><b>Pick a lesson time:</b></label>
+        <select name="time" id="time">
+          <option value="blank"> </option>
+          <option value="9">9 AM</option>
+          <option value="10">10 AM</option>
+          <option value="11">11 AM</option>
+          <option value="12">12 AM</option>
+          <option value="1">1 PM</option>
+          <option value="2">2 PM</option>
+          <option value="3">3 PM</option>
+        </select><br>
+        <br>
+
+        <!--- Buttons for control --->
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        <li class="navitem">
+          <button id="btnLoadData" class="btn btn-secondary">load json</button>
+        </li>
+      </form>
+    </div>
+
+    <div class="footer">
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Falmostheaven52.github.io%2FCIS-Hotel%2F" target="_blank">Check my validity!</a>
+      <a href="https://github.com/Almostheaven52/CIS-Hotel" target="_blank">Check my repo!</a>
+    </div>
+
+  </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
