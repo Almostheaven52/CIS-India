@@ -8,7 +8,7 @@ $('#btnLoadData').click(function() {
 
 //     let jsonURL = "demo.json";
 
-    let jsonURL = "demo.json";
+    let jsonURL = "https://almostheaven52.github.io/CIS-India/demo.json";
 
     $.ajax({
         url: jsonURL,

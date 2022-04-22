@@ -1,8 +1,8 @@
 {
     "firstName": "John",
     "lastName": "Doe",
-    "age": 25,
-    "zipCode": "87946",
-    "language": "html"
+    "emailAdress": "jdoe@example.com",
+    "creditCard": "1234 5678 9098 7654",
+    "lessonDate": "xx/xx/xxxx"
 
 }
